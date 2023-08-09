@@ -113,7 +113,7 @@
 		68FAA50B242E8E7E0061EF86 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		68FBC9FD2437A6A100002F7C /* SplitViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewDelegate.swift; sourceTree = "<group>"; };
 		99539CB62A83DBBA00417DBD /* Recipes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Recipes.entitlements; sourceTree = "<group>"; };
-		99539CB72A83E21000417DBD /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SidebarViewController.swift; path = Recipes/SidebarViewController.swift; sourceTree = "<group>"; };
+		99539CB72A83E21000417DBD /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,6 @@
 		684CD653242BCF60004090E5 = {
 			isa = PBXGroup;
 			children = (
-				99539CB72A83E21000417DBD /* SidebarViewController.swift */,
 				684CD673242BD2DC004090E5 /* README.md */,
 				684CD65E242BCF60004090E5 /* Recipes */,
 				684CD65D242BCF60004090E5 /* Products */,
@@ -165,6 +164,7 @@
 				68FBC9FD2437A6A100002F7C /* SplitViewDelegate.swift */,
 				68E6C2EF2482F62100F79593 /* TabBarItem.swift */,
 				6840AA69248B00F300BBED58 /* TabBarController.swift */,
+				99539CB72A83E21000417DBD /* SidebarViewController.swift */,
 				680A3B4E242D332E00630335 /* RecipeListViewController.swift */,
 				680A3B50242D389200630335 /* RecipeListCell.swift */,
 				68DC4A01247FFE5100579B91 /* RecipeListCell.xib */,
