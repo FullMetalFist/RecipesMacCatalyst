@@ -55,6 +55,7 @@
 		68E6C2F02482F62100F79593 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E6C2EF2482F62100F79593 /* TabBarItem.swift */; };
 		68FAA50C242E8E7E0061EF86 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FAA50B242E8E7E0061EF86 /* RecipeDetailViewController.swift */; };
 		68FBC9FE2437A6A100002F7C /* SplitViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FBC9FD2437A6A100002F7C /* SplitViewDelegate.swift */; };
+		99539CB82A83E21000417DBD /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99539CB72A83E21000417DBD /* SidebarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +113,7 @@
 		68FAA50B242E8E7E0061EF86 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		68FBC9FD2437A6A100002F7C /* SplitViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewDelegate.swift; sourceTree = "<group>"; };
 		99539CB62A83DBBA00417DBD /* Recipes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Recipes.entitlements; sourceTree = "<group>"; };
+		99539CB72A83E21000417DBD /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SidebarViewController.swift; path = Recipes/SidebarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		684CD653242BCF60004090E5 = {
 			isa = PBXGroup;
 			children = (
+				99539CB72A83E21000417DBD /* SidebarViewController.swift */,
 				684CD673242BD2DC004090E5 /* README.md */,
 				684CD65E242BCF60004090E5 /* Recipes */,
 				684CD65D242BCF60004090E5 /* Products */,
@@ -339,6 +342,7 @@
 				680A3B4F242D332E00630335 /* RecipeListViewController.swift in Sources */,
 				686C74252436722F00BED6AD /* RecipeEditorViewController.swift in Sources */,
 				68E6C2E124829FC000F79593 /* RecipeController.swift in Sources */,
+				99539CB82A83E21000417DBD /* SidebarViewController.swift in Sources */,
 				1F7AA12E248700600097AAEE /* RecipeCollectionsViewController.swift in Sources */,
 				68FAA50C242E8E7E0061EF86 /* RecipeDetailViewController.swift in Sources */,
 				68E6C2F02482F62100F79593 /* TabBarItem.swift in Sources */,
