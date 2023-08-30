@@ -56,6 +56,7 @@
 		68FAA50C242E8E7E0061EF86 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FAA50B242E8E7E0061EF86 /* RecipeDetailViewController.swift */; };
 		68FBC9FE2437A6A100002F7C /* SplitViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FBC9FD2437A6A100002F7C /* SplitViewDelegate.swift */; };
 		99539CB82A83E21000417DBD /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99539CB72A83E21000417DBD /* SidebarViewController.swift */; };
+		998215B02A9D1E2100DCBF60 /* ToolbarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998215AF2A9D1E2100DCBF60 /* ToolbarDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +115,7 @@
 		68FBC9FD2437A6A100002F7C /* SplitViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewDelegate.swift; sourceTree = "<group>"; };
 		99539CB62A83DBBA00417DBD /* Recipes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Recipes.entitlements; sourceTree = "<group>"; };
 		99539CB72A83E21000417DBD /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		998215AF2A9D1E2100DCBF60 /* ToolbarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				99539CB62A83DBBA00417DBD /* Recipes.entitlements */,
 				684CD65F242BCF60004090E5 /* AppDelegate.swift */,
 				6842CF0B25F02EB4006CCA23 /* Alert.swift */,
+				998215AF2A9D1E2100DCBF60 /* ToolbarDelegate.swift */,
 				684CD661242BCF60004090E5 /* SceneDelegate.swift */,
 				68FBC9FD2437A6A100002F7C /* SplitViewDelegate.swift */,
 				68E6C2EF2482F62100F79593 /* TabBarItem.swift */,
@@ -336,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				684CD660242BCF60004090E5 /* AppDelegate.swift in Sources */,
+				998215B02A9D1E2100DCBF60 /* ToolbarDelegate.swift in Sources */,
 				6840AA6A248B00F300BBED58 /* TabBarController.swift in Sources */,
 				6842CF0C25F02EB4006CCA23 /* Alert.swift in Sources */,
 				68E6C2DF248187E300F79593 /* RecipeDetailBottomAltViewController.swift in Sources */,

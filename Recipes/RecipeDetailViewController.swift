@@ -20,6 +20,7 @@ class RecipeDetailViewController: UIViewController, RecipeController {
     var recipe: Recipe? {
         didSet {
             updateUI()
+            configureActivityItems()
         }
     }
     
@@ -89,6 +90,16 @@ class RecipeDetailViewController: UIViewController, RecipeController {
         }
         
         navigationController?.setToolbarHidden(false, animated: animated)
+        
+        #if targetEnvironment(macCatalyst)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+        navigationController?.setToolbarHidden(true, animated: animated)
+        #endif
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        configureActivityItems()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -289,4 +300,36 @@ extension RecipeDetailViewController {
         self.recipe = dataStore.update(recipe)
     }
 
+}
+
+extension RecipeDetailViewController {
+    
+    private func configureActivityItems() {
+        var configuration: UIActivityItemsConfiguration?
+        
+        if let recipe = self.recipe {
+            configuration = UIActivityItemsConfiguration(objects: [recipe.fullImage])
+            configuration?.metadataProvider = { key in
+                switch key {
+                case .title, .messageBody:
+                    return recipe.title
+                default:
+                    return nil
+                }
+            }
+        }
+        
+        #if targetEnvironment(macCatalyst)
+        guard let view = self.view,
+              let window = view.window,
+              let windowScene = window.windowScene,
+              let titlebar = windowScene.titlebar,
+              let toolbar = titlebar.toolbar,
+              let toolbarDelegate = toolbar.delegate as? ToolbarDelegate else { return }
+        
+        if let shareRecipe = toolbarDelegate.shareRecipe {
+            shareRecipe.activityItemsConfiguration = configuration
+        }
+        #endif
+    }
 }

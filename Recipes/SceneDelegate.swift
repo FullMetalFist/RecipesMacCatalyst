@@ -11,6 +11,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     var splitViewDelegate = SplitViewDelegate()
+    var toolbarDelegate = ToolbarDelegate()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
@@ -22,6 +23,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             }
         }
         configureSplitViewController()
+        
+        #if targetEnvironment(macCatalyst)
+        guard let windowScene = scene as? UIWindowScene else { return }
+        
+        let toolbar = NSToolbar(identifier: "main")
+        toolbar.delegate = toolbarDelegate
+        toolbar.displayMode = .iconOnly
+        
+        if let titleBar = windowScene.titlebar {
+            titleBar.toolbar = toolbar
+            titleBar.toolbarStyle = .expanded
+        }
+        #endif
     }
     
     private func configureSplitViewController() {
